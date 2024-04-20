@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="habTinder.stranka3"
+             Title="stranka3"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+             >
+    <Grid>
+        <AbsoluteLayout>
+            <Image
+                Source="bg"
+                Aspect="AspectFill"
+                HeightRequest="850"
+                />
+        </AbsoluteLayout>
+
+        <ScrollView x:Name="scrollView">
+            <VerticalStackLayout x:Name="lejout" Margin="0,0,0,135">
+                <Button
+                    Text="aaa"
+                    Opacity="0"
+                />
+                <Border Stroke="#f76da7"
+                    StrokeThickness="2"
+                    Margin="10,0,100,5"
+                        Background="#f76da7"
+                        x:Name="lol"
+                        Opacity="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="45,45,45,45" />
+                    </Border.StrokeShape>
+                    <Label
+                    x:Name="lo"
+                    Text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"                      
+                    FontFamily="comic"
+                    TextColor="White"
+                    FontSize="20"
+                    Background="#f76da7"
+                    Margin="25,10,25,10"
+                    />
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <StackLayout x:Name="hlava" IsVisible="false">
+            <Image
+                x:Name="hlavaa"
+                Margin="0,100,0,0"
+                Source="hlava.png"         
+                Opacity="1"
+                />
+        </StackLayout>
+
+        <StackLayout x:Name="obleceni" IsVisible="false">
+            <Image
+                x:Name="oblecenii"
+                Margin="0,266,0,0"
+                Source="obleceni.png"
+                Opacity="1"           
+                />
+        </StackLayout>
+
+        <StackLayout x:Name="kocka" IsVisible="false">
+            <Image
+                x:Name="kockaa"
+                Margin="0,574,0,0"
+                Source="kocka.png"
+                Opacity="1"
+                
+                />
+        </StackLayout>
+
+        <StackLayout x:Name="jednaa"  IsVisible="True">
+            <Button     
+                x:Name="jedna1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,700,20,0"
+                Clicked="jedna"
+                TextColor="White"
+                Text="Kissing is a love language. Wanna"
+                 />
+            <Button        
+                x:Name="jedna2"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,-10,20,0"
+                Clicked="jedna"
+                TextColor="White"
+                Text="start a conversation with me?"
+                 />
+
+            <Button       
+                x:Name="dva1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,-135,20,0"
+                Clicked="dva"
+                TextColor="White"
+                Text="Wanna go out for burgers?"
+                 />
+
+        </StackLayout>
+
+        <StackLayout x:Name="dvaa" IsVisible="False">
+            <Button       
+                x:Name="tri1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,750,20,0"
+                TextColor="White"
+                Text="Sure."
+                Clicked="tri1_Clicked"
+                IsEnabled="False"
+                Opacity="0"
+                 />
+
+            <Button       
+                x:Name="ctyri1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,-100,20,0"
+                Clicked="ctyri1_Clicked"    
+                TextColor="White"
+                Text="Naah I'm just kiddin."
+                IsEnabled="False"
+                Opacity="0"
+                 />
+        </StackLayout>
+
+        <StackLayout x:Name="trii" IsVisible="False">
+
+            <Button
+                x:Name="pet1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,750,20,0"
+                Clicked="pet1_Clicked"      
+                TextColor="White"
+                Text="Cheeseburger, stick with classic."
+                IsEnabled="False"
+                Opacity="0"/>
+
+            <Button
+                x:Name="sest1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99"
+                Margin="20,-100,20,0"
+                Clicked="sest1_Clicked"      
+                TextColor="White"
+                Text="Double bacon Big Tasty."
+                IsEnabled="False"
+                Opacity="0"/>
+
+        </StackLayout>
+
+
+        <StackLayout x:Name="ctyrii" IsVisible="False">
+            <Button
+                x:Name="sedm1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,750,20,0"
+                Clicked="sedm1_Clicked"      
+                TextColor="White"
+                Text="Suggest a day."
+                IsEnabled="False"
+                Opacity="0"/>
+
+            <Button
+                x:Name="osm1"
+                FontFamily="comic"
+                FontSize="18"
+                Background="#e31c99" 
+                Margin="20,-100,20,0"
+                Clicked="osm1_Clicked"      
+                TextColor="White"
+                Text="Come over, we'll order to my place."
+                IsEnabled="False"
+                Opacity="0"/>
+        </StackLayout>
+
+        <StackLayout x:Name="pett" IsVisible="False">
+            <Button
+                x:Name="devet1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,750,20,0"
+                Clicked="devet1_Clicked"      
+                TextColor="White"
+                Text="You look beautiful!"
+                IsEnabled="False"
+                Opacity="0"/>
+
+            <Button
+                x:Name="deset1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,-100,20,0"
+                Clicked="deset1_Clicked"     
+                TextColor="White"
+                Text="You look ready for burgers."
+                IsEnabled="False"
+                Opacity="0"/>
+
+        </StackLayout>
+
+        <StackLayout x:Name="sestt" IsVisible="False">
+            <Button
+                x:Name="jedenact1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,750,20,0"
+                Clicked="jedenact1_Clicked"    
+                TextColor="White"
+                Text="..."
+                IsEnabled="False"
+                Opacity="0"/>
+
+            <Button
+                x:Name="dvanact1"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,-100,20,0"
+                Clicked="dvanact1_Clicked"     
+                TextColor="White"
+                Text="Well, what do you think? :D"
+                IsEnabled="False"
+                Opacity="0"/>
+
+
+
+        </StackLayout>
+
+
+
+        <StackLayout>
+            <Image
+            Source="bar"
+            />
+            <Label
+                AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Margin="125,-75"
+                Text="Habu"
+                FontSize="50"
+                FontFamily="comic"
+                TextColor="White"
+            />
+
+
+
+
+
+
+
+
+        </StackLayout>
+
+        <StackLayout>
+
+            <Label
+                x:Name="loadingLabel"
+                Margin="250,25,0,0"
+                FontSize="50"
+                FontFamily="comic"
+                TextColor="White"
+                    />
+        </StackLayout>
+        
+        
+
+
+        <VerticalStackLayout x:Name ="layout1" Opacity="0">
+
+            <Image
+                Source="bg2"
+                Aspect="AspectFill"
+                HeightRequest="850"
+                />
+
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout x:Name="layout2" Opacity="1">
+
+            <Label x:Name="timeLabel"
+               FontFamily="comic"
+               FontSize="75"
+               Margin="115,300,0,0"
+               TextColor="#e31c99"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout x:Name="layout3" Opacity="1">
+
+            <Label x:Name="timeLabel1"
+               FontFamily="comic"
+               FontSize="75"
+               Margin="115,300,0,0"
+               TextColor="#e31c99"/>
+        </VerticalStackLayout>
+
+        <StackLayout>
+            <Image
+                x:Name="hvezda"
+                Source="star"
+                HeightRequest="75"
+                Margin="275,15,0,0"
+                Opacity="0"
+                />
+
+        </StackLayout>
+
+        <StackLayout>
+                <Image
+                    x:Name="finale"
+                    Source="bg"
+                    Aspect="AspectFill"
+                    HeightRequest="850"
+                    IsEnabled="False"
+                    Opacity="0"
+                    />
+        </StackLayout>
+
+        <StackLayout x:Name="finaleVeci" IsVisible="false" IsEnabled="False" Opacity="0">
+            <Image
+                Source="logo"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center" 
+                Margin="0,75,0,-45"
+                />
+
+            <Image
+                Source="habu"
+                HeightRequest="300"
+                />
+            
+            <Border Stroke="#f76da7"
+                StrokeThickness="2"
+                BackgroundColor="#f76da7"
+                    Margin="15,0,10,5">
+                
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <Label
+                x:Name="finaleText"
+                Text="Placeholder"
+                FontFamily="comic"
+                FontSize="20"
+                Margin="25"
+                TextColor="White"
+                />
+            </Border>
+
+            <Button
+                Text="Exit application."
+                FontFamily="comic"
+                FontSize="20"
+                Background="#f76da7" 
+                Margin="25"
+                Clicked="Button_Clicked"
+                TextColor="White"
+                />
+        </StackLayout>
+        
+        
+
+    </Grid>
+</ContentPage>

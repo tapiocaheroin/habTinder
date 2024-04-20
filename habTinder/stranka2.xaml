@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="habTinder.stranka2"
+             Title="stranka2"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+             >
+    <Grid>
+        <VerticalStackLayout>
+            <Image
+                Source="bg"
+                Aspect="AspectFill"
+                HeightRequest="850"
+                />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Image
+                x:Name="char2"
+                Opacity="1"
+                Margin="0,-15,0,0"
+                Source="char2"
+                HeightRequest="675"
+                />
+            
+            <Image
+                x:Name="char1"
+                Margin="0,-675,0,0"
+                Source="char1"
+                HeightRequest="675"
+                />
+
+
+
+            <ImageButton 
+                x:Name="like"
+                Source="like"
+                Margin="0,8,200,0"
+                HeightRequest="100"
+                Clicked="like_Clicked" 
+                IsEnabled="False"
+                />
+
+            <ImageButton 
+
+                x:Name="dislike"
+                Source="del"
+                Margin="200,-100,0,0"
+                HeightRequest="100"
+                Clicked="dislike_Clicked"  
+                IsEnabled="False"
+                />
+        </VerticalStackLayout>
+        
+
+
+        
+        
+        <VerticalStackLayout x:Name ="layout1" Opacity="0">
+            <Image
+                Source="bg"
+                Aspect="AspectFill"
+                HeightRequest="850"
+                
+                />
+        </VerticalStackLayout>
+        
+        <VerticalStackLayout>
+
+            <Label
+                x:Name="text1"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Margin="50,250,50,0"
+                Text="Hmm she looks really cute, I should try my luck with her."
+                FontSize="50"
+                FontFamily="comic"
+                TextColor="#e31c99"
+                Opacity="0"
+                />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label
+                x:Name="text2"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Margin="50,250,50,0"
+                Text="Would be a real shame if i didn't liked her..."
+                FontSize="50"
+                FontFamily="comic"
+                TextColor="#e31c99"
+                Opacity="0"
+                />
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label
+                x:Name="text3"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Margin="50,285,50,0"
+                Text="..."
+                FontSize="150"
+                FontFamily="comic"
+                TextColor="#e31c99"
+                Opacity="0"
+                />
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout x:Name="layout2" Opacity="0">
+            <ImageButton
+                x:Name="icon"
+                Source="icon"
+                Margin="0,100,00,0"
+                HeightRequest="200"
+                IsEnabled="False"
+                Clicked="icon_Clicked"
+                />
+            <Image
+                Source="match"
+                Margin="0,-100,00,0"
+
+                />
+            <ImageButton
+                Margin="0,-75,00,0"
+                HeightRequest="300"
+                x:Name="heart"
+                Source="heart"
+                IsEnabled="False"
+                Clicked="heart_Clicked"
+                />
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout x:Name="nastaveni1" IsEnabled="False" Opacity="0">
+            <Image
+                Source="bg.png"
+                Aspect="AspectFill"
+                HeightRequest="850"     
+                />
+        </VerticalStackLayout>
+
+        <ScrollView x:Name="scrollView" IsEnabled="False" Opacity="0">
+            <VerticalStackLayout x:Name="nastaveni2" IsEnabled="False" Opacity="0" IsVisible="false">
+                
+                <ImageButton
+                x:Name="kolo2"
+                Source="kolecko.png"
+                HeightRequest="100"
+                Margin="0,10,265,10"
+                Clicked="kolo2_Clicked"
+              
+              
+                />
+                <Button
+                x:Name="obrazky"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#e31c99" 
+                Margin="20,10,20,0"
+                Clicked="obrazky_Clicked"
+                TextColor="White"
+                Text="Select a picture."
+                IsEnabled="False"
+                />
+
+                <Image 
+                x:Name="vybrany" 
+                IsVisible="false" 
+                Margin="10,10,10,0"
+                
+                />
+
+                <Border Stroke="#f76da7"
+                StrokeThickness="2"
+                Margin="15,10,10,5">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10,10,10,10" />
+                    </Border.StrokeShape>
+
+                    <Entry
+                Keyboard="Chat"                 
+                x:Name="entry1"
+                FontSize="20"
+                FontFamily="comic"
+                Background="#f76da7" 
+                PlaceholderColor="White"             
+                TextColor="White"   
+                        IsEnabled="False"
+                />
+                </Border>
+                
+                <Border Stroke="#f76da7"
+                StrokeThickness="2"
+                Margin="15,0,10,5">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10,10,10,10" />
+                    </Border.StrokeShape>
+
+                    <Entry
+                Keyboard="Numeric"                 
+                x:Name="entry2"
+                Placeholder="How old are you?"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#f76da7" 
+                PlaceholderColor="White"             
+                TextColor="White" 
+                        IsEnabled="False"
+                />
+                </Border>
+
+                <Border Stroke="#f76da7"
+                StrokeThickness="2"
+                Margin="15,0,10,5">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10,10,10,10" />
+                    </Border.StrokeShape>
+
+                    <Entry
+                Keyboard="Chat"                 
+                x:Name="entry3"
+                Placeholder="What is your favorite food?"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#f76da7" 
+                PlaceholderColor="White"             
+                TextColor="White"   
+                        IsEnabled="False"
+                />
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+        <VerticalStackLayout>
+            <ImageButton
+                x:Name="kolo1"
+                Source="kolecko.png"
+                HeightRequest="100"
+                Margin="0,10,265,0"
+                Clicked="kolo_Clicked" 
+                
+        />
+
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

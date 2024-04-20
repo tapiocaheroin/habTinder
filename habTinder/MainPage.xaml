@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="habTinder.MainPage"
+             Shell.BackgroundColor="#FFE3E2"
+             BackgroundColor="#D7BBF5"
+             Shell.NavBarIsVisible="False"
+
+             >
+
+    <Grid>
+        <VerticalStackLayout>
+            <Image
+                Source="bg"
+                Aspect="AspectFill"
+                HeightRequest="850"
+                />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Image
+                Source="logo"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center" 
+                Margin="0,75,0,-45"
+                />
+
+            <Image
+                Source="habu"
+                HeightRequest="300"
+                />
+
+            <Button
+                Text="Start!!!"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#f76da7" 
+                Margin="25"
+                Clicked="Button_Clicked"
+                TextColor="White"
+                />
+            <Button
+                Text="Exit!!!"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#f76da7" 
+                Margin="25,0,25,0"
+                TextColor="White"
+                Clicked="Button_Clicked_1"  
+                />
+        </VerticalStackLayout>
+    </Grid>
+
+    
+</ContentPage>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="habTinder.stranka1"
+             Title="stranka1"
+             Shell.BackgroundColor="#FFE3E2"
+             BackgroundColor="#D7BBF5" 
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+             >
+    <Grid>
+        <VerticalStackLayout>
+            <Image
+                Source="bg"
+                Aspect="AspectFill"
+                HeightRequest="850"
+                />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Image
+                Source="logo"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalOptions="Center" 
+                Margin="0,75,0,-45"
+                />
+
+            <Image
+                Source="habu"
+                HeightRequest="300"
+                />
+
+
+
+            <Border Stroke="#f76da7"
+                StrokeThickness="2"
+                Margin="15,0,10,5">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="0,45,45,0" />
+                </Border.StrokeShape>
+
+                <Entry 
+                Keyboard="Chat"                 
+                x:Name="entry"
+                Placeholder="What's your name???"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#f76da7" 
+                PlaceholderColor="White"             
+                TextColor="White"
+                TextChanged="Entry_TextChanged" 
+                />
+
+
+            </Border>
+
+            <Button
+                x:Name="button"
+                Opacity="0"
+                Text="Let's play!!!"
+                FontFamily="comic"
+                FontSize="20"
+                Background="#f76da7" 
+                Margin="25,25,25,0"
+                TextColor="White"
+                Clicked="Button_Clicked"  
+                IsEnabled="False"
+
+                />
+
+         
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
